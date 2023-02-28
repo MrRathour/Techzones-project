@@ -1,0 +1,14 @@
+.xyz {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../../public/images/space.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .upperlayer {
+        height: 100vh;
+        width: 100%;
+        background: rgb(23, 24, 25);
+        background: linear-gradient(90deg, rgba(23, 24, 25, 1) 0%, rgba(0, 0, 0, 0.21341036414565828) 100%);
+    }
+}

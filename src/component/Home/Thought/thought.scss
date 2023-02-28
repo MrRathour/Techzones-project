@@ -1,0 +1,67 @@
+@mixin flex($justify, $vertical) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $vertical;
+}
+
+div.ourCourse {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../../../public/images/galaxy.jpg");
+    color: var(--bgcolor);
+    position: relative;
+    overflow: hidden;
+
+    div.layer {
+        height: 100vh;
+        width: 100%;
+        @include flex(center, center);
+        background-color: #0f12168c;
+        position: absolute;
+        top:0;
+
+        .first-showcase {
+            img {
+                width: 40%;
+                position: absolute;
+                bottom: 1px;
+                left: -112px;
+            }
+        }
+
+        .our-mission {
+            width: 40%;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                margin: 10px 0;
+                line-height: 27px;
+                font-size: 20px;
+                margin: 40px 0;
+            }
+
+            div.thought {
+                font-size: 40px;
+
+                .comma {
+                    margin: 0 10px 0 0;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .second-showcase {
+            img {
+                width: 15%;
+                position: absolute;
+                top: 50px;
+                right: 56px;
+
+            
+            }
+        }
+    }
+}

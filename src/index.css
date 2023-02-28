@@ -1,0 +1,24 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  --bgcolor-1:#222222;
+  --bgcolor:#fff5d0;
+  --text-color:#fff;
+}
+body{
+  background:var(--bgcolor-1);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body::-webkit-scrollbar{
+  width:0px;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
