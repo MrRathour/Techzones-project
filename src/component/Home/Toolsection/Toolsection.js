@@ -1,23 +1,36 @@
 import "./toolsection.scss";
-import { Reviewcard } from '../Reviewslider/Reviewcard';
+import { Reviewcard } from "../../../Card/Reviewcard";
 
 
 export function Toolsection() {
 
     const data = [{
-        img: '../images/html-5.png',
-        name: "HTML5",
+        img: 'images/gradient-tool.png',
+        name: "Gradient Generator",
+        place: "Make your project crazy with fantastic and owsm gradients",
+        arrow: "images/right-arrow.png"
     }, {
-        img: "./images/css.png",
-        name: "CSS3",
+        img: "./images/waiting.png",
+        name: "CSS Loader Generator",
+        place: "Lets add some crazyness into your project with css loader",
+        arrow: "images/right-arrow.png"
     }, {
-        img: "./images/java-script.png",
-        name: "Java Script",
+        img: "./images/blob.svg",
+        name: "SVG Blob Generator",
+        place: "Make your own Shape for your projects",
+        arrow: "images/right-arrow.png"
     }, {
-        img: "./images/files.png",
-        name: "PHP",
-    }]
+        img: "./images/box.png",
+        name: "CSS Box Shadow Generator",
+        place: "93 shadows examples for your projects",
+        arrow: "images/right-arrow.png"
+    }];
 
+    const slides = document.querySelectorAll('.card');
+
+    slides.forEach((element, index) => {
+        element.style.left = `${index * 0}%`
+    })
     return (
         <div className="tool">
             <div className="heading">
@@ -27,8 +40,9 @@ export function Toolsection() {
                 <div className="flex-container">
                     <Reviewcard data={data} />
                 </div>
-                <a className="explore-btn" href="/">Explore More <i class="fa-solid fa-caret-right"></i></a>
+
             </div>
+            <a className="explore-btn" href="/">Explore More <i class="fa-solid fa-caret-right"></i></a>
         </div>
     )
 }

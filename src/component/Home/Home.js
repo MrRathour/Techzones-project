@@ -5,6 +5,7 @@ import { Thought } from "./Thought/Thought";
 import { Review } from "./Reviewslider/Review";
 import { Courseshow } from "./Courseshow/Courseshow";
 import { Toolsection } from "./Toolsection/Toolsection";
+import Slider from "../Courses/slider";
 import { Xyz } from "./Xyz";
 export function Home(){
     return(
@@ -12,10 +13,11 @@ export function Home(){
         <Navbar/>
         <Firstsection/>
         <Thought/>
-        <Review/>
-        <Courseshow/>
         <Toolsection/>
+        <Courseshow/>
+        <Review/>
         <Xyz/>
+       <Slider/>
         <Footer/>
         </>
     )

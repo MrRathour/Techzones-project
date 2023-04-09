@@ -13,13 +13,16 @@ export function Footer(){
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                     
                     <a href="/" className="social">
-                        <img src="./images/youtube.png" alt="youtube-icon" className="youtube"/>
+                        <img src="./images/youtube.png" alt="youtube-icon" className="social youtube"/>
                     </a>
                     <a href="/" className="social">
-                        <img src="./images/twitter.png" alt="twitter-icon" className="twitter"/>
+                        <img src="./images/twitter.png" alt="twitter-icon" className="social"/>
                     </a>
                     <a href="/" className="social">
-                        <img src="./images/linkedin.png" alt="linkedin-icon sml-icon" className="linkedin"/>
+                        <img src="./images/linkedin.png" alt="linkedin-icon sml-icon" className="social"/>
+                    </a>
+                    <a href="/" className="social">
+                        <img src="./images/instagram.png" alt="instagram-icon" className="social"/>
                     </a>
                 </div>
                 <div className="overview">

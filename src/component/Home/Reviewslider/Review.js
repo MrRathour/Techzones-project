@@ -1,6 +1,6 @@
 // why slider is not workin 
 import './review.scss';
-import { Reviewcard } from './Reviewcard';
+import { Reviewcard } from '../../../Card/Reviewcard';
 export function Review() {
 
     const data = [{
@@ -36,7 +36,8 @@ export function Review() {
     console.log(controller)
     slides.forEach((element, index) => {
         element.style.left = `${index * 50}%`;
-    })
+    });
+    
     setInterval(() => {
         controller++
         parent.style.transform = `translateX(-${controller * 50}%)`;

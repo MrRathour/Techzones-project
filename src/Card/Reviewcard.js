@@ -1,7 +1,6 @@
-import "./reviewcard.scss"
+import "./reviewcard.scss";
 
 export function Reviewcard(props) {
-
     return (
         props.data.map((val, index) => {
             return (
@@ -16,6 +15,7 @@ export function Reviewcard(props) {
                             <p>{val.place}</p>
                         </div>
                     </div>
+                    <img src={val.arrow} className="arrow" alt="arrow" />
                 </div>
             )
         })

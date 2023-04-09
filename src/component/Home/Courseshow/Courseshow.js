@@ -1,5 +1,5 @@
 import './courseshow.scss';
-import { Reviewcard } from '../Reviewslider/Reviewcard';
+import { Reviewcard } from '../../../Card/Reviewcard';
 
 export function Courseshow() {
     const data = [{
